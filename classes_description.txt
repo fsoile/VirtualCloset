@@ -1,0 +1,48 @@
+// Virtual Closet Project - Classes Description
+//
+//  The Virtual Closet is a C++ application that simulates the everyday
+//  experience of picking an outfit. The user builds a digital closet by adding
+//  clothing items one at a time. When it is time to get dressed, they browse
+//  through the closet item by item — trying each one on and deciding whether
+//  to keep it in their outfit for the day or send it back to the closet.
+//
+//  Once the user has built their outfit list, they can use the Pick for Me
+//  feature, that randomly selects one item from each clothing category, and displays
+//  the list as the item as the final outfit for the user to wear.
+//  
+//
+//  The application demonstrates uses a stack as a core data structure,
+//  showing how LIFO behavior is similar to picking items out of a physical closet. It is
+//  built using three classes — ClothingItem and Closet —  outfit Combo and uses an
+//  SFML graphical interface so the user can interact with the closet visually
+//  through buttons and colored panels.
+
+// ------------------------------------------------------------------------
+
+// ClothingItem Class description:
+//  A ClothingItem represents a single piece of clothing in the virtual closet.
+//  Each item has a name (e.g. "Blue Jeans") and a category (e.g. "Bottoms").
+//  This class is the basic building block of the entire application — every
+//  item that gets added to the closet, tried on, or kept in an outfit is a
+//  ClothingItem object. It stores the data and provides simple methods to
+//  retrieve or display that information when needed.
+// ----------------------------------------------------------------------------
+
+// Closet Class description:
+// A Closet represents the virtual closet of the user.
+// It stores the clothing items in a stack and the current item being tried on.
+// It also stores the items in the todaysOutfit vector.
+// It provides functions to add items to the closet, try on items, keep items, return items, pick random outfits, clear the todaysOutfit, display the todaysOutfit, display the closetStack, and get the current item.
+// It also provides functions to check if the user is currently trying on an item, if the closetStack is empty, if the todaysOutfit is not empty, and to return the todaysOutfit and the closetStack.
+// ------------------------------------------------------------------------------
+
+
+// OutfitCombo description:
+/ outfit_combo.h
+// A OutfitCombo represents a combination of clothing items that can be used as an outfit.
+// It requires the user to keep at least one item from each category 
+//  (tops, bottoms, shoes, accessories), then the user can use the "Pick for Me!" button 
+// to pick a random outfit combination from the list of clothing items in the todaysOutfit vector.
+// The pickrandom function will randomly select 4 items (one from each category) from the 4 different categories
+//  (tops, bottoms, shoes, accessories)
+// The outfit combination is then displayed in the outfit panel.

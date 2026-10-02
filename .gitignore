@@ -1,0 +1,15 @@
+# Build outputs
+build/
+*.o
+*.obj
+*.exe
+
+# Local SFML SDK folders (do not commit)
+SFML/
+SFML-*/
+
+# Windows runtime bits (generated/copied locally)
+*.dll
+
+
+build_app_out.txt
